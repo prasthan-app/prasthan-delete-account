@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Delete કરો | Prasthan - TA Management</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .header .badge {
+      display: inline-block;
+      background: #003087;
+      color: #FFD700;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #003087;
+    }
+
+    .header p {
+      font-size: 13px;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #003087;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .info-list li {
+      font-size: 13px;
+      color: #444;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .info-list li::before {
+      content: "•";
+      color: #00AEEF;
+      position: absolute;
+      left: 4px;
+      font-weight: 700;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      background: #003087;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .step p {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .step p strong {
+      color: #1a1a2e;
+    }
+
+    .contact-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.88;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .btn-email {
+      background: #003087;
+      color: #fff;
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .notice {
+      background: #FFF8E1;
+      border-left: 3px solid #FFD700;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 12.5px;
+      color: #555;
+      line-height: 1.6;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .notice strong {
+      color: #333;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 11.5px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="badge">Prasthan · TA Management</div>
+    <h1>Account Deletion</h1>
+    <p>Gujarat Police · Travel Allowance App</p>
+  </div>
+
+  <!-- What gets deleted -->
+  <div class="card">
+    <h2>
+      <span class="icon" style="background:#FEE2E2;">🗑️</span>
+      ડીલીટ થનાર ડેટા
+    </h2>
+    <ul class="info-list">
+      <li>Authentication સાથે જોડાયેલ મોબાઇલ નંબર</li>
+      <li>Registration form માં ભરેલી તમામ માહિતી (નામ, હોદ્દો, સ્ટેશન વગેરે)</li>
+      <li>App માં save થયેલ duty entries</li>
+      <li>Generate થયેલ PDF reports નો record</li>
+    </ul>
+  </div>
+
+  <!-- How to request -->
+  <div class="card">
+    <h2>
+      <span class="icon" style="background:#DBEAFE;">📋</span>
+      રીકવેસ્ટ કઈ રીતે કરશો
+    </h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <p>નીચે આપેલ <strong>WhatsApp</strong> અથવા <strong>Email</strong> દ્વારા અમારો સંપર્ક કરો</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <p>તમારું <strong>Registered Mobile Number</strong> અને <strong>નામ</strong> જણાવો</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <p>Verification પછી <strong>30 દિવસ</strong>ની અંદર account સંપૂર્ણ delete કરવામાં આવશે</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact buttons -->
+  <div class="card">
+    <h2>
+      <span class="icon" style="background:#D1FAE5;">💬</span>
+      Help &amp; Support
+    </h2>
+    <div class="contact-btns">
+      <a class="btn btn-whatsapp"
+        href="https://wa.me/919537548040?text=મારે%20Prasthan%20App%20નું%20account%20delete%20કરાવવું%20છે.%0ARegistered%20Mobile%3A%20%0Aનામ%3A%20"
+        target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        WhatsApp · 9537548040
+      </a>
+
+      <a class="btn btn-email"
+        href="mailto:prasthanapp@gmail.com?subject=Account%20Delete%20Request%20-%20Prasthan%20App&body=Registered%20Mobile%3A%20%0AName%3A%20%0ARequest%3A%20Please%20delete%20my%20account%20and%20all%20associated%20data."
+        target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+        Email · prasthanapp@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <div class="notice">
+    <strong>📌 નોંધ:</strong> Account delete થયા પછી તમે ફરીથી નવું account બનાવી શકો છો.
+    Delete request મળ્યા પછી <strong>30 દિવસ</strong>ની અંદર data સંપૂર્ણ remove કરવામાં આવશે.
+  </div>
+
+  <footer>
+    &copy; 2026 Prasthan - TA Management &nbsp;|&nbsp; ॥ સેવાર્થે પ્રસ્થાનમ ॥
+  </footer>
+
+</body>
+
+</html>
