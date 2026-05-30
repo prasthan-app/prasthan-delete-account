@@ -11,8 +11,11 @@ Gujarat Police · TA & Patrol Book Management
 🗑️ ડીલીટ થનાર ડેટા
 
   • Authentication સાથે જોડાયેલ મોબાઇલ નંબર તથા જી મેલ Google signup
+  
   • Registration form માં ભરેલી તમામ માહિતી (નામ, હોદ્દો, સ્ટેશન વગેરે)
+  
   • App માં save થયેલ duty entries
+  
   • Generate થયેલ PDF reports નો record
 
 ────────────────────────────────────────
