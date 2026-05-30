@@ -31,11 +31,13 @@ Gujarat Police · TA & Patrol Book Management
 💬 Help & Support
 
   WhatsApp : 9537548040
+  
   Email    : prasthan.support@gmail.com
 
 ────────────────────────────────────────
 
 📌 નોંધ: Account delete થયા પછી તમે ફરીથી નવું account બનાવી શકો છો.
+
 Delete request મળ્યા પછી 30 દિવસની અંદર data સંપૂર્ણ remove કરવામાં આવશે.
 
 ────────────────────────────────────────
